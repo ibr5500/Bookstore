@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 
-const ADD_BOOK = 'ADD_BOOK';
-const REMOVE_BOOK = 'REMOVE_BOOK';
+const ADD_BOOK = 'BOOKSTORE/redux/ADD_BOOK';
+const REMOVE_BOOK = 'BOOKSTORE/redux/REMOVE_BOOK';
 
 const books = [];
 
