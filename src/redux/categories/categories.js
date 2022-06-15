@@ -1,12 +1,12 @@
 const CHECK_STATUS = 'BOOKSTORE/redux/CHECK_STATUS';
 
-const categories = [];
+// const categories = [];
 
-export const checkingStatus = () => ({
+export const checkStatus = () => ({
   type: CHECK_STATUS,
 });
 
-const categoryRedeucer = (state = categories, action) => {
+const categoryRedeucer = (state = [], action) => {
   switch (action.type) {
     case CHECK_STATUS:
       return ['Under construction'];

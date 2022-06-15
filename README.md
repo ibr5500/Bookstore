@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bookstore: initialize project with components.
+# Bookstore: use Redux in React components.
 
 ## Description:
 
@@ -8,9 +8,10 @@
 
 ### In this project I have:
 
-> - Initialise React app.
-> - Create a directory for components.
-> - Added React Router.
+> - Imported Redux useDispatch in the following modules ( AddNewBook, Book, and Categories ).
+> - Used useSelector to consume the state.
+> - Made the remove and add button work.
+> - Added a few books in the default state (books) array 
 
 ## Built With
 
