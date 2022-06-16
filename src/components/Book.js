@@ -13,6 +13,7 @@ const Book = () => {
   return (
     displayBooks.map((elem) => (
       <div className="book" key={elem.id}>
+        <h5 className="category">{ elem.category }</h5>
         <h2 className="book-title">{ elem.title }</h2>
         <p className="book-author">{ elem.author }</p>
         <button type="button" className="comments">Comments</button>
