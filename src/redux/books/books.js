@@ -25,11 +25,7 @@ export const fetchData = () => async (dispatch) => {
 const bookReducer = (state = books, action) => {
   switch (action.type) {
     case ADD_BOOK:
-      return [...state,
-        {
-          id: books.length + 1,
-          ...action.payload,
-        }];
+      return [...state, { ...action.book }];
     case REMOVE_BOOK:
       return state.filter((book) => book.id !== action.id);
     case DISPLAY_BOOKS:
