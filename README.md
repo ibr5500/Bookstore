@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bookstore: use Redux in React components.
+# Bookstore: connect to API.
 
 ## Description:
 
@@ -8,10 +8,10 @@
 
 ### In this project I have:
 
-> - Imported Redux useDispatch in the following modules ( AddNewBook, Book, and Categories ).
-> - Used useSelector to consume the state.
-> - Made the remove and add button work.
-> - Added a few books in the default state (books) array 
+> - Added redux-thunk.
+> - Used Axios for making API calls.
+> - Fetched book list from Bookstore API.
+> - Refactored the add book and remove book functions.
 
 ## Built With
 
