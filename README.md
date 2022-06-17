@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bookstore: connect to API.
+# Bookstore: styling.
 
 ## Description:
 
@@ -8,10 +8,10 @@
 
 ### In this project I have:
 
-> - Added redux-thunk.
-> - Used Axios for making API calls.
-> - Fetched book list from Bookstore API.
-> - Refactored the add book and remove book functions.
+> - Added the progress section.
+> - Added the update progress section.
+> - Styled the Books page.
+> - Styled the categories page.
 
 ## Built With
 

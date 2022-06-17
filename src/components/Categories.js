@@ -6,9 +6,9 @@ const Categories = () => {
   const dispatch = useDispatch();
   const updateStatus = useSelector((state) => state.categories);
   return (
-    <div className="btn-container">
+    <div className="category-container">
       {(updateStatus).map((status) => <h2 key={status}>{status}</h2>)}
-      <button type="button" className="btn" onClick={() => dispatch(checkStatus())}>Check status</button>
+      <button type="button" className="category-btn" onClick={() => dispatch(checkStatus())}>Check status</button>
     </div>
   );
 };

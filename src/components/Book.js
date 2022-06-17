@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { ImSpinner8 } from 'react-icons/im';
 import { fetchData, removeBook } from '../redux/books/books';
 
 const Book = () => {
@@ -11,14 +12,34 @@ const Book = () => {
   }, []);
 
   return (
-    displayBooks.map((elem) => (
+    displayBooks.map((elem, index) => (
       <div className="book" key={elem.id}>
-        <h5 className="category">{ elem.category }</h5>
-        <h2 className="book-title">{ elem.title }</h2>
-        <p className="book-author">{ elem.author }</p>
-        <button type="button" className="comments">Comments</button>
-        <button type="button" className="remove-btn" onClick={() => { dispatch(removeBook(elem.id)); }}>Remove</button>
-        <button type="button" className="edits">Edit</button>
+        <div className="book-content">
+          <h5 className="category">{ elem.category }</h5>
+          <h2 className="book-title">{ elem.title }</h2>
+          <p className="book-author">{ elem.author }</p>
+          <button type="button" className="comments book-btn">Comments</button>
+          <button type="button" className="remove-btn book-btn" onClick={() => { dispatch(removeBook(elem.id)); }}>Remove</button>
+          <button type="button" className="edits book-btn">Edit</button>
+        </div>
+        <div className="reading-status">
+          <ImSpinner8 className="loading" />
+          <div className="status-content">
+            <h3>
+              {index + Math.floor(Math.random() * 80) }
+              %
+            </h3>
+            <p>completed</p>
+          </div>
+        </div>
+        <div className="update">
+          <h4>CURRENT CHAPTER</h4>
+          <h2>
+            Chapter-
+            { index + Math.floor(Math.random() * 10) + 1}
+          </h2>
+          <button type="button" className="update-btn">Update Progress</button>
+        </div>
       </div>
     )));
 };
