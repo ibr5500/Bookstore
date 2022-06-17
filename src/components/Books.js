@@ -5,6 +5,7 @@ import Book from './Book';
 const Books = () => (
   <div>
     <Book />
+    <hr />
     <AddNewBook />
   </div>
 );
