@@ -35,8 +35,8 @@ const Book = () => {
         <div className="update">
           <h4>CURRENT CHAPTER</h4>
           <h2>
-            Chapter
-            {index + Math.floor(Math.random() * 10)}
+            Chapter-
+            { index + Math.floor(Math.random() * 10) + 1}
           </h2>
           <button type="button" className="update-btn">Update Progress</button>
         </div>
