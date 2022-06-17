@@ -16,7 +16,8 @@ nav {
   background-color: #fff;
   justify-content: space-between;
   padding: 25px;
-  /*margin: 25px 50px;*/
+
+  /* margin: 25px 50px; */
 }
 
 .nav-content {
@@ -88,13 +89,14 @@ nav .icon {
   font-size: 16px;
 }
 
-.book-content button {
+.book-btn {
   background: none;
   color: #018cff;
   font-size: 1.5em;
 }
 
-.comments, .edits {
+.comments,
+.edits {
   border: none;
 }
 
@@ -144,7 +146,7 @@ nav .icon {
   margin: 15px 0;
 }
 
-.update button {
+.update-btn {
   color: #fff;
   background-color: #018cff;
   width: auto;
@@ -152,7 +154,7 @@ nav .icon {
   border-radius: 8px;
 }
 
-.update button:hover {
+.update-btn:hover {
   transform: scale(1.1, 1.1);
 }
 
@@ -180,7 +182,9 @@ hr {
   font-size: 1.3rem;
 }
 
-.form input,select,button {
+.form input,
+select,
+button {
   height: auto;
   border: 1px solid #c4c4c4;
   font-size: 20px;
@@ -212,4 +216,29 @@ hr {
 
 .form button:hover {
   transform: scale(1.1, 1.1);
+}
+
+.category-container {
+  width: 40%;
+  height: 10rem;
+  background-color: #fff;
+  text-align: center;
+  align-items: center;
+  border: 2px solid #c4c4c4;
+  box-shadow: 2px 2px 12px 1px #c4c4c4;
+  padding: 25px;
+  margin: 50px auto;
+}
+
+.category-container h2 {
+  color: #535353;
+  font-size: 2rem;
+  padding: 5px 0 0 0;
+}
+
+.category-btn {
+  margin: 80px 0 0 0;
+  color: #fff;
+  background-color: #018cff;
+  border-radius: 8px;
 }

@@ -18,9 +18,9 @@ const Book = () => {
           <h5 className="category">{ elem.category }</h5>
           <h2 className="book-title">{ elem.title }</h2>
           <p className="book-author">{ elem.author }</p>
-          <button type="button" className="comments">Comments</button>
-          <button type="button" className="remove-btn" onClick={() => { dispatch(removeBook(elem.id)); }}>Remove</button>
-          <button type="button" className="edits">Edit</button>
+          <button type="button" className="comments book-btn">Comments</button>
+          <button type="button" className="remove-btn book-btn" onClick={() => { dispatch(removeBook(elem.id)); }}>Remove</button>
+          <button type="button" className="edits book-btn">Edit</button>
         </div>
         <div className="reading-status">
           <ImSpinner8 className="loading" />
@@ -38,7 +38,7 @@ const Book = () => {
             Chapter
             {index + Math.floor(Math.random() * 10)}
           </h2>
-          <button type="button">Update Progress</button>
+          <button type="button" className="update-btn">Update Progress</button>
         </div>
       </div>
     )));
