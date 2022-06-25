@@ -20,7 +20,7 @@
 
 ## Live Demo (if available)
 
-Not available
+Please [click](https://bookssote-app.netlify.app/) for live demo
 
 ## Getting Started
 
